@@ -67,6 +67,15 @@
   transform: translateX(0px);
 }
 
+.active::before {
+  margin-right: 10px;
+  content: '[';
+}
+.active::after {
+  margin-left: 10px;
+  content: ']';
+}
+
 $transition: all .5s ease;
 
 .search {
