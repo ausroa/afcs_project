@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light" style="padding: 0">
+<nav class="navbar navbar-expand-lg navbar-light bg-light cl-effect-1" style="padding: 0; position: relative; top: -1px;">
   <img class="navbar-brand nav-logo"
        src="assets/images/logo 1.png"
        alt="">
@@ -21,12 +21,25 @@
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2"
-             type="search"
-             placeholder="Search"
-             aria-label="Search">
-      <button class="nav-button"
-              type="submit">Search</button>
+      <!--<input [@openClose]="isOpen ? 'open' : 'close'" class="form-control mr-sm-2"-->
+             <!--type="search"-->
+             <!--placeholder="Search"-->
+             <!--aria-label="Search">-->
+      <div class="search">
+        <input type="search" class="search-box" />
+        <span class="search-button">
+    <span class="search-icon"></span>
+  </span>
+      </div>
+      <!--<button class="nav-button"-->
+              <!--type="submit">-->
+        <!--<img class="nav-search-icon" src="assets/images/magniglass.png" alt="">-->
+      <!--</button>-->
     </form>
+    <div>
+      <button class="nav-btn-register" (click)="toggleSearch()">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Register&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </button>
+    </div>
   </div>
 </nav>
