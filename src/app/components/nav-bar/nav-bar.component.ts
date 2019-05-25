@@ -42,6 +42,10 @@ export class NavBarComponent implements OnInit {
     ];
 
     this.isOpen = false;
+
+    $('.search-button').click(function(){
+      $(this).parent().toggleClass('open');
+    });
   }
 
   toggleSearch() {
