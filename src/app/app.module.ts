@@ -24,7 +24,7 @@ import { CarouselImgComponent } from './components/carousel/components/carousel-
     DescriptionComponent,
     CarouselItemDirective,
     NgbdCarouselBasicComponent,
-    CarouselImgComponent,
+    CarouselImgComponent
   ],
   imports: [
     BrowserModule,

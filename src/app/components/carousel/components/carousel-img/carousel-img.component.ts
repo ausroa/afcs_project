@@ -1,5 +1,4 @@
-import {Component, DoCheck, Input, OnChanges, OnInit, SimpleChanges, ViewChild} from '@angular/core';
-import {Observable} from 'rxjs';
+import {Component, DoCheck, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'carousel-img',

@@ -5,8 +5,9 @@
       <div class="carousel-caption"></div>
     </ng-template>
   </ngb-carousel>
-  <span *ngIf="image.activeId === 'ngb-slide-1'" class="dot active-img"></span>
-  <span *ngIf="image.activeId !== 'ngb-slide-1' || image.activeId !== 'ngb-slide-0'" class="dot"></span>
+  <!--TODO Figure out how to dynamically change for image-->
   <span *ngIf="image.activeId === 'ngb-slide-0' || image.activeId === undefined" class="dot active-img"></span>
+  <span *ngIf="image.activeId !== 'ngb-slide-1' || image.activeId !== 'ngb-slide-0'" class="dot"></span>
+  <span *ngIf="image.activeId === 'ngb-slide-1'" class="dot active-img"></span>
 </div>
 

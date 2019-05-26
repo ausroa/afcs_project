@@ -17,5 +17,13 @@ export class NgbdCarouselBasicComponent implements OnInit {
       {url: 'assets/images/Directed Energy.jpg'},
       {url: 'assets/images/home_1.jpg'}
     ];
+
+    console.log(this.image);
+
+    if(this.image.changes) {
+      this.image.changes.subscribe((c) => {
+        console.log(c);
+      });
+    }
   }
 }
