@@ -1,5 +1,5 @@
 <div class="c-container">
-  <ngb-carousel [showNavigationArrows]="false" [showNavigationIndicators]="false" #carouselImgs>
+  <ngb-carousel @fadeIn [showNavigationArrows]="false" [showNavigationIndicators]="false" #carouselImgs>
     <ng-template ngbSlide *ngFor="let img of carouselImgsUrls; index as i">
       <carousel-img [image]="img" [activeImg]="image.activeId"></carousel-img>
       <div class="carousel-caption"></div>

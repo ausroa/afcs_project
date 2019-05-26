@@ -4,7 +4,15 @@ import {animate, state, style, transition, trigger} from '@angular/animations';
 @Component({
   selector: 'ngbd-carousel-basic',
   templateUrl: './ngbd-carousel-basic.component.html',
-  styleUrls: ['./ngbd-carousel-basic.component.scss']
+  styleUrls: ['./ngbd-carousel-basic.component.scss'],
+  animations: [
+    trigger('fadeIn', [
+      transition(':enter', [
+        style({opacity: 0}),
+        animate('1.2s', style({opacity: 1}))
+      ])
+    ])
+  ]
 })
 export class NgbdCarouselBasicComponent implements OnInit {
   @ViewChild('carouselImgs') public image: any;
