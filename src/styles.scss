@@ -3,3 +3,16 @@ html, body {
   height: 100%;
   width: 100%;
 }
+
+.carousel-item {
+  transition: opacity 1.2s ease!important;
+  position: absolute!important;
+  display: block!important;
+  opacity: 0
+}
+
+.carousel-item.active {
+  position: relative!important;
+  opacity: 1
+}
+

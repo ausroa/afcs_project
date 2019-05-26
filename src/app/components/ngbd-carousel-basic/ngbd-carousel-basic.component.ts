@@ -1,5 +1,5 @@
-import {AfterContentInit, AfterViewInit, Component, DoCheck, Input, OnChanges, OnInit, SimpleChanges, ViewChild} from '@angular/core';
-import {BehaviorSubject} from 'rxjs';
+import { Component, OnInit, ViewChild} from '@angular/core';
+import {animate, state, style, transition, trigger} from '@angular/animations';
 
 @Component({
   selector: 'ngbd-carousel-basic',
@@ -14,16 +14,12 @@ export class NgbdCarouselBasicComponent implements OnInit {
 
   ngOnInit() {
     this.carouselImgsUrls = [
-      {url: 'assets/images/Directed Energy.jpg'},
-      {url: 'assets/images/home_1.jpg'}
+      {url: 'assets/images/Directed Energy.jpg', id: 'ngb-slide-0'},
+      {url: 'assets/images/home_1.jpg', id: 'ngb-slide-1'}
     ];
 
-    console.log(this.image);
-
-    if(this.image.changes) {
-      this.image.changes.subscribe((c) => {
-        console.log(c);
-      });
+    if(!this.image.activeId) {
+      this.image.activeId = 'ngb-slide-0';
     }
   }
 }

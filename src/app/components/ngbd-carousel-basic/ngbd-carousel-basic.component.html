@@ -1,13 +1,13 @@
 <div class="c-container">
   <ngb-carousel [showNavigationArrows]="false" [showNavigationIndicators]="false" #carouselImgs>
     <ng-template ngbSlide *ngFor="let img of carouselImgsUrls; index as i">
-      <carousel-img [image]="img"></carousel-img>
+      <carousel-img [image]="img" [activeImg]="image.activeId"></carousel-img>
       <div class="carousel-caption"></div>
     </ng-template>
   </ngb-carousel>
-  <!--TODO Figure out how to dynamically change for image-->
-  <span *ngIf="image.activeId === 'ngb-slide-0' || image.activeId === undefined" class="dot active-img"></span>
-  <span *ngIf="image.activeId !== 'ngb-slide-1' || image.activeId !== 'ngb-slide-0'" class="dot"></span>
-  <span *ngIf="image.activeId === 'ngb-slide-1'" class="dot active-img"></span>
+  <span class="dot"
+              [ngClass]="{'active-img': pic.id === image.activeId}"
+              *ngFor="let pic of carouselImgsUrls">
+  </span>
 </div>
 
