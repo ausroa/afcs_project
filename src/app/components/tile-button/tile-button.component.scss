@@ -1,0 +1,25 @@
+.tile-title {
+  font-size:  30px;
+  display: block;
+  position: relative;
+  top: 180px;
+  left: 40px;
+  z-index: 1;
+  color: white;
+}
+
+.tile-image {
+  position: relative;
+  top: -43px;
+}
+
+.tile-line {
+  height: 5px;
+  width: 155px;
+  display: block;
+  background-color: white;
+  position: absolute;
+  z-index: 1;
+  top: 240px;
+  left: 30px;
+}

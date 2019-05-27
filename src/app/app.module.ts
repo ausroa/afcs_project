@@ -13,6 +13,7 @@ import { DescriptionComponent } from './components/description/description.compo
 import { CarouselItemDirective } from './directives/carousel-item.directive';
 import { NgbdCarouselBasicComponent } from './components/ngbd-carousel-basic/ngbd-carousel-basic.component';
 import { CarouselImgComponent } from './components/carousel/components/carousel-img/carousel-img.component';
+import { TileButtonComponent } from './components/tile-button/tile-button.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { CarouselImgComponent } from './components/carousel/components/carousel-
     DescriptionComponent,
     CarouselItemDirective,
     NgbdCarouselBasicComponent,
-    CarouselImgComponent
+    CarouselImgComponent,
+    TileButtonComponent
   ],
   imports: [
     BrowserModule,

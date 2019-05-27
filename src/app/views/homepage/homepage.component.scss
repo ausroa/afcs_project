@@ -1,4 +1,14 @@
-div {
+.homepage-container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  left: 0;
+  top: -55px;
+  float: left;
+  z-index: -1;
+}
+
+.text1, .text2, .text3 {
   color: white;
   position: relative;
   left: 100px;
@@ -9,17 +19,78 @@ div {
 }
 
 .text1 {
+  display: block;
   top: 300px;
+  width: 1000px;
 }
 
 .text2 {
+  display: block;
   position: relative;
   top: 270px;
+  width: 1000px;
 }
 
 .text3 {
+  display: block;
   font-size: 40px;
   top: 260px;
+  width: 1000px;
+}
+
+.carousel-logo {
+  position: absolute;
+  display: block;
+  height: 45px;
+  width: 158px;
+  top: 225px;
+  left: 100px;
+}
+
+.tile-buttons {
+  width: 100%;
+  position: relative;
+  background-color: rgb(27, 33, 52);
+  left: 0;
+  height: 50%;
+  float: left;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.tile-buttons:hover {
+  overflow: visible;
+}
+
+.tile-button {
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  width: 20%;
+  left: 0;
+  background-color: rgb(27, 33, 52);
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+
+.tile-button:hover {
+  transform: scale(1.2);
+  width: 420px;
+  height: 470px;
+  transform-origin: bottom left;
+  z-index: 5;
+}
+
+.tile-line {
+  height: 5px;
+  width: 155px;
+  display: block;
+  background-color: white;
+  position: absolute;
+  top: 240px;
+  left: 30px;
 }
 
 
