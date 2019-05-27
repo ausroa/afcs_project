@@ -79,7 +79,7 @@
   transform: scale(1.2);
   width: 420px;
   height: 470px;
-  transform-origin: bottom left;
+  transform-origin: bottom;
   z-index: 5;
 }
 
@@ -91,6 +91,13 @@
   position: absolute;
   top: 240px;
   left: 30px;
+}
+
+.description {
+  position: relative;
+  height: 3000px;
+  width: 100%;
+  background-color: rgb(27, 33, 52);
 }
 
 
