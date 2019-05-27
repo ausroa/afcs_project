@@ -4,6 +4,12 @@ html, body {
   width: 100%;
   margin: 0;
   padding: 0;
+  background-image: url("assets/images/airforce_background.jpg");
+  position: absolute;
+  z-index: -9999;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .carousel-item {

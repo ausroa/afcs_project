@@ -73,6 +73,7 @@
   overflow: hidden;
   cursor: pointer;
   transition: all 1s ease;
+  justify-content: space-around;
 }
 
 .tile-button:hover {
@@ -95,7 +96,8 @@
 
 .description {
   position: relative;
-  height: 3000px;
+  height: 1000px;
+  display: inline-block;
   width: 100%;
   background-color: rgb(27, 33, 52);
 }

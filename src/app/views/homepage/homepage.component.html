@@ -1,17 +1,19 @@
-<div style="height: 261%; width: 100%; display: flex; flex-direction: column">
+<div style="height: 144%; width: 100%; display: flex; flex-direction: column">
   <div class="homepage-container">
     <ngbd-carousel-basic></ngbd-carousel-basic>
-    <div class="carousel-logo">
-      <img src="assets/images/logo 2.png" alt="" height="100%" width="100%">
-    </div>
-    <div class="text1">
-      <span>{{carouselCap.text1 | uppercase}}</span>
-    </div>
-    <div class="text2">
-      <span>{{carouselCap.text2 | uppercase}}</span>
-    </div>
-    <div class="text3">
-      <span>{{carouselCap.text3 | uppercase}}</span>
+    <div @slideUp>
+      <div class="carousel-logo">
+        <img src="assets/images/logo 2.png" alt="" height="100%" width="100%">
+      </div>
+      <div class="text1">
+        <span>{{carouselCap.text1 | uppercase}}</span>
+      </div>
+      <div class="text2">
+        <span>{{carouselCap.text2 | uppercase}}</span>
+      </div>
+      <div class="text3">
+        <span>{{carouselCap.text3 | uppercase}}</span>
+      </div>
     </div>
   </div>
   <div class="tile-buttons">
@@ -19,8 +21,8 @@
       <tile-button [tileButton]="tileButton"></tile-button>
     </div>
   </div>
-  <div class="description">
-    <description></description>
-  </div>
+</div>
+<div class="description">
+  <description></description>
 </div>
 

@@ -15,6 +15,12 @@ import {animate, state, style, transition, trigger} from '@angular/animations';
       })),
       transition('hidden => shown', animate(500)),
       transition('shown => hidden', animate(500))
+    ]),
+    trigger('slideUp', [
+      transition(':enter', [
+        style({transform: 'translateY(900%)'}),
+        animate('1.5s', style({transform: 'translateY(0%)'}))
+      ])
     ])
   ]
 })

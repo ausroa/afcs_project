@@ -6,10 +6,10 @@ import {animate, state, style, transition, trigger} from '@angular/animations';
   templateUrl: './ngbd-carousel-basic.component.html',
   styleUrls: ['./ngbd-carousel-basic.component.scss'],
   animations: [
-    trigger('fadeIn', [
+    trigger('slideUp', [
       transition(':enter', [
-        style({opacity: 0}),
-        animate('1.2s', style({opacity: 1}))
+        style({transform: 'translateY(200%)'}),
+        animate('1.5s', style({transform: 'translateY(0%)'}))
       ])
     ])
   ]
