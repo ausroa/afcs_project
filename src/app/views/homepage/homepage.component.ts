@@ -21,7 +21,6 @@ import {animate, state, style, transition, trigger} from '@angular/animations';
 export class HomepageComponent implements OnInit {
   public carouselCap: any;
   tileButtonsRM: any[];
-  tileButtonLocation: string;
   slideUp: boolean;
 
   constructor() { }

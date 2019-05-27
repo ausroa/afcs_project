@@ -16,7 +16,7 @@
   </div>
   <div class="tile-buttons">
     <div [@slideCardUp]="slideUp ? 'hidden' : 'shown'" *ngFor="let tileButton of tileButtonsRM" class="tile-button" style="background-image: url({{tileButton.img}})">
-      <tile-button [tileButton]="tileButton" [tilePosition]="tileButtonLocation"></tile-button>
+      <tile-button [tileButton]="tileButton"></tile-button>
     </div>
   </div>
   <div class="description">

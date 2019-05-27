@@ -22,9 +22,6 @@ export class TileButtonComponent implements OnInit {
   slideOut: boolean;
 
   @Input()
-  tilePosition: number;
-
-  @Input()
   tileButton: any;
 
   constructor() { }
