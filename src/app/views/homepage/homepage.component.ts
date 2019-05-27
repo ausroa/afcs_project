@@ -52,6 +52,5 @@ export class HomepageComponent implements OnInit {
   @HostListener('window:scroll', ['$event'])
   slideCardsUp() {
     this.slideUp = false;
-    console.log('[You scrolled the window] Slide up Animation', this.slideUp);
   }
 }
