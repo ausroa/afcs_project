@@ -14,6 +14,8 @@ import { CarouselItemDirective } from './directives/carousel-item.directive';
 import { NgbdCarouselBasicComponent } from './components/ngbd-carousel-basic/ngbd-carousel-basic.component';
 import { CarouselImgComponent } from './components/carousel/components/carousel-img/carousel-img.component';
 import { TileButtonComponent } from './components/tile-button/tile-button.component';
+import { SliderComponent } from './components/slider/slider.component';
+import {SwiperModule} from 'angular2-useful-swiper';
 
 @NgModule({
   declarations: [
@@ -26,13 +28,15 @@ import { TileButtonComponent } from './components/tile-button/tile-button.compon
     CarouselItemDirective,
     NgbdCarouselBasicComponent,
     CarouselImgComponent,
-    TileButtonComponent
+    TileButtonComponent,
+    SliderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    NgbModule
+    NgbModule,
+    SwiperModule
   ],
   providers: [],
   bootstrap: [AppComponent]
