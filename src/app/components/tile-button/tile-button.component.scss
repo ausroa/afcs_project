@@ -2,15 +2,16 @@
   font-size:  30px;
   display: block;
   position: relative;
-  top: 180px;
+  top: 260px;
   left: 40px;
   z-index: 1;
   color: white;
 }
 
 .tile-image {
+  overflow: hidden;
   position: relative;
-  top: -43px;
+  top: -45px;
 }
 
 .tile-line {
@@ -20,6 +21,6 @@
   background-color: white;
   position: absolute;
   z-index: 1;
-  top: 240px;
+  top: 320px;
   left: 30px;
 }

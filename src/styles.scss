@@ -1,26 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
-html, body {
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
+ngb-carousel {
+  height: 95%;
+}
+
+.carousel-inner {
   height: 100%;
   width: 100%;
-  margin: 0;
-  padding: 0;
-  background-image: url("assets/images/airforce_background.jpg");
-  position: absolute;
-  z-index: -9999;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .carousel-item {
   transition: opacity 1.2s ease!important;
   position: absolute!important;
   display: block!important;
-  opacity: 0
+  opacity: 0;
+
+  img {
+    max-height: 100%;
+    max-width: 100%;
+  }
 }
 
 .carousel-item.active {
   position: relative!important;
-  opacity: 1
+  opacity: 1;
+
+  img {
+    max-height: 100%;
+    max-width: 100%;
+  }
 }
 

@@ -1,5 +1,5 @@
 .homepage-container {
-  height: 100%;
+  height: 100vh;
   width: 100%;
   position: relative;
   left: 0;
@@ -52,54 +52,74 @@
   position: relative;
   background-color: rgb(27, 33, 52);
   left: 0;
-  height: 50%;
+  top: -52px;
+  vertical-align: top;
   float: left;
   display: flex;
   flex-direction: row;
   overflow: hidden;
-}
 
-.tile-buttons:hover {
-  overflow: visible;
+  &:hover {
+  }
 }
 
 .tile-button {
   position: relative;
   display: inline-block;
-  height: 100%;
   width: 20%;
   left: 0;
   background-color: rgb(27, 33, 52);
   overflow: hidden;
   cursor: pointer;
   transition: all 1s ease;
-  justify-content: space-around;
-}
+  outline: none;
+  border: none;
 
-.tile-button:hover {
-  transform: scale(1.2);
-  width: 420px;
-  height: 470px;
-  transform-origin: bottom;
-  z-index: 5;
+  &:hover {
+    width: 21.3%;
+  }
 }
 
 .tile-line {
   height: 5px;
-  width: 155px;
+  width: 93px;
   display: block;
   background-color: white;
   position: absolute;
-  top: 240px;
-  left: 30px;
+  top: 590px;
+  left: 100px;
 }
 
 .description {
   position: relative;
+  top: -77px;
   height: 1000px;
   display: inline-block;
   width: 100%;
   background-color: rgb(27, 33, 52);
+}
+
+.typewriter span {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 3.5s,
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
 }
 
 

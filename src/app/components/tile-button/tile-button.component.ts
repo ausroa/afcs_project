@@ -20,6 +20,7 @@ import {animate, state, style, transition, trigger} from '@angular/animations';
 })
 export class TileButtonComponent implements OnInit {
   slideOut: boolean;
+  expand: boolean;
 
   @Input()
   tileButton: any;
@@ -27,16 +28,19 @@ export class TileButtonComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    this.expand = false;
     this.slideOut = true;
   }
 
   @HostListener('mouseenter', ['$event.target'])
   slideOpen() {
     this.slideOut = false;
+    this.expand = true;
   }
 
   @HostListener('mouseleave', ['$event.target'])
   slideClose() {
     this.slideOut = true;
+    this.expand = false;
   }
 }

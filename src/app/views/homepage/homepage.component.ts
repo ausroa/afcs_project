@@ -11,10 +11,10 @@ import {animate, state, style, transition, trigger} from '@angular/animations';
         transform: 'translateY(100%)'
       })),
       state('shown', style({
-        transform: 'translateY(0%) perspective(500px) translate3d(10px, 0, 100px)'
+        transform: 'translateY(0%)'
       })),
-      transition('hidden => shown', animate(500)),
-      transition('shown => hidden', animate(500))
+      transition('hidden => shown', animate(600)),
+      transition('shown => hidden', animate(600))
     ]),
     trigger('slideUp', [
       transition(':enter', [
