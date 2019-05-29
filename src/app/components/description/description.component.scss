@@ -14,7 +14,7 @@ $descriptionTop: 200px;
 
 .description-text {
   position: relative;
-  height: $descriptionTextHeight;
+  //height: $descriptionTextHeight;
   width: $descriptionTextWidth;
   margin: auto;
   top: $descriptionTop;
@@ -29,6 +29,21 @@ p {
   color: white;
   font-size: 60px;
   font-weight: bold;
+}
+
+.text, .text >* {
+}
+.text {
+  animation: giggle 1s ease infinite;
+}
+
+@keyframes giggle {
+  0%, 100% {
+    transform:translateY(-2px);
+  }
+  50% {
+    transform:translateY(2px);
+  }
 }
 
 
